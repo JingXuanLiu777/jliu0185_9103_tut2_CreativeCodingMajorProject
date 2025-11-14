@@ -1,7 +1,7 @@
 let paused = false;
 let pauseBtn;
-let colored=true;
-
+//let colored=true;
+let nightMode=false;
 
 const BASE_W = 1000;
 const BASE_H = 800;
@@ -13,10 +13,12 @@ function setup() {
   cnv=createCanvas(windowWidth, windowHeight);
   cnv.elt.focus();
 
-  pauseBtn=createButton("STOP/START");
+  pauseBtn=createButton("recovery&continue");
   pauseBtn.position(width*0.02,height*0.02);
   
-  pauseBtn.mousePressed(()=>{paused=!paused;
+  pauseBtn.mousePressed(()=>{paused=false; for(const c of cars){
+    c.recolor();
+  }
     cnv.elt.focus();
   });
 
@@ -90,13 +92,13 @@ function draw() {
 
 function keyPressed(){
   if(key===' '){
-    colored=!colored;
-
-    for(const c of cars){if(colored){c.recolor();}else{c.toGray()};
+    paused=true;
+    nightMode=true;
+    
+    for(const c of cars){c.toGray()};
     }
     }
-    }
-  
+    
 
 // Adjustment
 function windowResized() {
