@@ -122,6 +122,9 @@ class Car {
    recolor() {
     this.color = randomCarColor();
   }
+  toGray(){
+  this.color="#aaaaaa";
+}
 }
 
 

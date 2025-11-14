@@ -1,18 +1,23 @@
 let paused = false;
 let pauseBtn;
+let colored=true;
 
 
 const BASE_W = 1000;
 const BASE_H = 800;
 
+let cnv;
+
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  cnv=createCanvas(windowWidth, windowHeight);
+  cnv.elt.focus();
 
-
-  pauseBtn=createButton("stop/start");
-  pauseBtn.position(20,20);
-  pauseBtn.mousePressed(()=>paused=!paused);
+  pauseBtn=createButton("STOP/START");
+  pauseBtn.position(400,800);
+  pauseBtn.mousePressed(()=>{paused=!paused;
+    cnv.elt.focus();
+  });
 
 
   angleMode(DEGREES);
@@ -76,8 +81,21 @@ function draw() {
   pop();
 }
 
+//function mousePressed(){
+  //for(const c of cars) {
+ // c.toGray();
+  //}
+//}
 
+function keyPressed(){
+  if(key===' '){
+    colored=!colored;
 
+    for(const c of cars){if(colored){c.recolor();}else{c.toGray()};
+    }
+    }
+    }
+  
 
 // Adjustment
 function windowResized() {
