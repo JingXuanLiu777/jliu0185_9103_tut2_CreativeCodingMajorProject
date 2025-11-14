@@ -53,9 +53,9 @@ Colour switching:
 let car_Palette = [mondrianRed, mondrianBlue, mondrianYellow];
 this.color = option.color || randomCarColor();
 
--Tse recolor() to extract colour.
+-Use recolor() to extract colour.
 
-## 组内区别
+## Intra-group distinctions
 My work primarily embodies the following distinctions:
 > Emphasis on physical objects undergoing "path-based motion"
 I prioritise the transition of the vehicle's state, focusing chiefly on its dynamic presentation. While preserving other elements unchanged, altering the vehicle's attributes modifies the visual effects.
@@ -65,6 +65,6 @@ The contrast between static and dynamic states simulates the difference between 
 
 
     
-## 参考资料
+## References
 https://www.youtube.com/watch?v=PRInd3uMdSA
  
