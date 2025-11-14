@@ -14,7 +14,8 @@ function setup() {
   cnv.elt.focus();
 
   pauseBtn=createButton("STOP/START");
-  pauseBtn.position(400,800);
+  pauseBtn.position(width*0.02,height*0.02);
+  
   pauseBtn.mousePressed(()=>{paused=!paused;
     cnv.elt.focus();
   });
