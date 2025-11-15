@@ -1,8 +1,9 @@
 # jliu0185--MONDRAIN TOWN (INPUT SECTION) 
 This interactive animation draws inspiration from Mondrian's masterpiece Broadway. The composition simulates urban traffic scenes, with circular components representing moving vehicles. Within the framework of a group project, keyboard and button controls govern the movement and colouration of vehicles, simulating the dynamic variations of city traffic throughout the day and night.
-![preview](assets\下载.png)
+![preview]D:\9103\idea_9103_jx\jliu0185_9103_tut2_IDEA9103_CreativeCodingMajorProject_SydneyRailBroadway\assets\night mondrian city.png
 
 ## Interaction Notes
+The changes and additions were primarily made to the CarAnimation and Sketch code sections.
 
 ### Space manipulation
 **Spacebar**
@@ -69,7 +70,10 @@ The contrast between static and dynamic states simulates the difference between 
 
     
 ## References
-https://www.youtube.com/watch?v=PRInd3uMdSA
-https://openprocessing.org/sketch/2404618
+！[Assisting in understanding how the cart moves]https://www.youtube.com/watch?v=PRInd3uMdSA
 
- 
+！[Technical support is currently suspended]https://p5js.org/examples/animation-and-variables-animation-with-events/
+
+https://openprocessing.org/sketch/2404618
+https://p5js.org/reference/p5/p5.Vector/
+https://p5js.org/examples/games-ping-pong/

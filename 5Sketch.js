@@ -3,6 +3,7 @@ let pauseBtn;
 //let colored=true;
 let darkAmount=0;
 
+
 const BASE_W = 1000;
 const BASE_H = 800;
 
@@ -28,7 +29,7 @@ function setup() {
   pauseBtn.position(width*0.02,height*0.02);
   
   pauseBtn.mousePressed(()=>{paused=false; 
-    darkMode=false;
+    
     for(const c of cars)c.recolor();
     updateButtonStyle();
     cnv.elt.focus();
@@ -107,11 +108,6 @@ function draw() {
   }
   pop();
 
-  //if(darkMode){
-    //noStroke();
-   // fill(0,140);
-   // rect(0,0,width,height);
-  //}
 
 }
 
