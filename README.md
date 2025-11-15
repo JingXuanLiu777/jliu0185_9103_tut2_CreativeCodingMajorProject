@@ -28,17 +28,18 @@ function keyPressed() {
     if () {}
     for () {}
 }
-This formula enables switching between the vehicle's motion states.
+-This formula enables switching between the vehicle's motion states.
 
 >Button:
  pauseBtn=createButton();
  pauseBtn.mousePressed(()=>{
     ;;for(){c.recolor();}
  });
- Use this formula to control the colour switching of the car.
+ -Use this formula to control the colour switching of the car.
 
  ## Animated adaptation
- > polyline:
+ The following formulas were primarily employed:
+ > movement:
  this.segLens = [];
  this.totalLenth = 0;
   for (let i = 0; i < this.path.length - 1; i++) {
@@ -46,7 +47,7 @@ This formula enables switching between the vehicle's motion states.
   this.segLens.push(d);
   this.totalLenth += d;
 }
-The core animation for the car's movement along the track involves pre-calculating the distance travelled in each segment and the total length (totalLength). The current position is then determined cyclically using the distance obtained via advance(). By employing p5.Vector.lerp(a, b, t) to interpolate intermediate values, a smooth motion effect is achieved.
+**The core animation for the car's movement along the track involves pre-calculating the distance travelled in each segment and the total length (totalLength). The current position is then determined cyclically using the distance obtained via advance(). By employing p5.Vector.lerp(a, b, t) to interpolate intermediate values, a smooth motion effect is achieved.**
 
 Colour switching:
 >car:
