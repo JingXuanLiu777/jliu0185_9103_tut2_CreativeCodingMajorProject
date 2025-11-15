@@ -47,7 +47,8 @@ function keyPressed() {
   this.segLens.push(d);
   this.totalLenth += d;
 }
-**The core animation for the car's movement along the track involves pre-calculating the distance travelled in each segment and the total length (totalLength). The current position is then determined cyclically using the distance obtained via advance(). By employing p5.Vector.lerp(a, b, t) to interpolate intermediate values, a smooth motion effect is achieved.**
+
+-The core animation for the car's movement along the track involves pre-calculating the distance travelled in each segment and the total length (totalLength). The current position is then determined cyclically using the distance obtained via advance(). By employing p5.Vector.lerp(a, b, t) to interpolate intermediate values, a smooth motion effect is achieved.
 
 Colour switching:
 >car:
@@ -58,10 +59,10 @@ this.color = option.color || randomCarColor();
 
 ## Intra-group distinctions
 My work primarily embodies the following distinctions:
-> Emphasis on physical objects undergoing "path-based motion"
-I prioritise the transition of the vehicle's state, focusing chiefly on its dynamic presentation. While preserving other elements unchanged, altering the vehicle's attributes modifies the visual effects.
-> Interactive control of narrative pacing
-Interaction governs the vehicle's movement rather than automatic cycling.
+-Emphasis on physical objects undergoing "path-based motion"
+>I prioritise the transition of the vehicle's state, focusing chiefly on its dynamic presentation. While preserving other elements unchanged, altering the vehicle's attributes modifies the visual effects.
+-Interactive control of narrative pacing
+>Interaction governs the vehicle's movement rather than automatic cycling.
 The contrast between static and dynamic states simulates the difference between day and night.
 
 
