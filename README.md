@@ -1,5 +1,5 @@
 # jliu0185--MONDRAIN TOWN (INPUT SECTION) 
-This is an interactive animation inspired by Mondrian's masterpiece 'Broadway'. Urban traffic is simulated within the composition, with circular components representing moving vehicles. Building upon the group project's foundation, keyboard and button controls manipulate the movement and colour of the vehicles to simulate the distinction between daytime and night-time cityscapes.
+This interactive animation draws inspiration from Mondrian's masterpiece Broadway. The composition simulates urban traffic scenes, with circular components representing moving vehicles. Within the framework of a group project, keyboard and button controls govern the movement and colouration of vehicles, simulating the dynamic variations of city traffic throughout the day and night.
 
 ## Interaction Notes
 
@@ -8,11 +8,11 @@ This is an interactive animation inspired by Mondrian's masterpiece 'Broadway'. 
 - Switches all vehicles to grey, simulating a stationary effect at night
 - Pauses all vehicles simultaneously at the current frame
 > Function summary:
-> **Press Spacebar - All vehicles turn grey + movement pauses**
+> **Press Spacebar - All vehicles turn grey + movement pauses+ the environment grew dim**
 
 ### Left-hand top button control
-In the top-left corner of the screen, create a button labelled "recovery&continue" using p5.js.
-**Click the button**
+In the top-left corner of the screen, create a button labelled "TO DAYTIME" using p5.js.
+**Click the "TO DAYTIME" button**
 - Restore all cars to their original colour scheme
 - Reset all cars to their previous motion state
 
