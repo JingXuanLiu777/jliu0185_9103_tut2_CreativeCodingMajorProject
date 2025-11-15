@@ -1,6 +1,6 @@
 # jliu0185--MONDRAIN TOWN (INPUT SECTION) 
 This interactive animation draws inspiration from Mondrian's masterpiece Broadway. The composition simulates urban traffic scenes, with circular components representing moving vehicles. Within the framework of a group project, keyboard and button controls govern the movement and colouration of vehicles, simulating the dynamic variations of city traffic throughout the day and night.
-![preview]D:\9103\idea_9103_jx\jliu0185_9103_tut2_IDEA9103_CreativeCodingMajorProject_SydneyRailBroadway\assets\night mondrian city.png
+![preview]assets\night mondrian city.png
 
 ## Interaction Notes
 The changes and additions were primarily made to the CarAnimation and Sketch code sections.
