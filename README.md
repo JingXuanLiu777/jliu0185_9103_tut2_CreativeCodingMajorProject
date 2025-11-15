@@ -20,24 +20,32 @@ In the top-left corner of the screen, create a button labelled "TO DAYTIME" usin
 
 >Function Summary:
 **Press button - Restore colour to cart + Resume movement**
+![preview](assets/daytimecity.png)
 
 ## Specific methods
 I've opted for an input-driven approach to execute the code.
 **Implementing interactive controls to achieve the desired effect**
 Utilising global variables such as "paused" and "coloured" to regulate the animation state of the vehicle.
->Spacebar:
+>Spacebar: 
 function keyPressed() {
-    if () {}
-    for () {}
+    if (key === ' ') {
+        paused = true;
+        for (const c of cars) {
+            c.toGray();
+        }
+    }
 }
--This formula enables switching between the vehicle's motion states.
+`keyPressed()`enables switching between the vehicle's motion states.
 
 >Button:
- pauseBtn=createButton();
- pauseBtn.mousePressed(()=>{
-    ;;for(){c.recolor();}
- });
- -Use this formula to control the colour switching of the car.
+pauseBtn = createButton();
+pauseBtn.mousePressed(() => {
+    paused = false;
+    for (const c of cars) {
+        c.recolor();
+    }
+});
+ This button control the colour switching of the car. When clicked,it restores the colors using`recolor()`and resumes movement`(paused=false)`.
 
  ## Animated adaptation
  The following formulas were primarily employed:
@@ -50,14 +58,17 @@ function keyPressed() {
   this.totalLenth += d;
 }
 
--The core animation for the car's movement along the track involves pre-calculating the distance travelled in each segment and the total length (totalLength). The current position is then determined cyclically using the distance obtained via advance(). By employing p5.Vector.lerp(a, b, t) to interpolate intermediate values, a smooth motion effect is achieved.
+The core animation for the car's movement along the track involves pre-calculating the distance travelled in each segment and the total length (totalLength). The current position is then determined cyclically using the distance obtained via `advance()`. 
+
+p5.Vector.lerp(a, b, t)
+Let animation goes smoothly between the path.
 
 Colour switching:
 >car:
 let car_Palette = [mondrianRed, mondrianBlue, mondrianYellow];
 this.color = option.color || randomCarColor();
 
--Use recolor() to extract colour.
+Use `recolor()` to extract colour.
 
 ## Intra-group distinctions
 My work primarily embodies the following distinctions:
