@@ -123,6 +123,12 @@ function drawSea() {
 }
 
 function drawRails() {
+
+  if(paused){
+    stroke(230);
+  }else{
+    stroke(0);
+  }
   strokeWeight(stroke_W);
   noFill();
 
@@ -143,7 +149,8 @@ function drawRails() {
   
   drawPolyline(p_Gray,c_Gray);
   drawPolyline(p_WSA, c_Gray);
-
+ 
+  
 }
 
 function drawStations() {

@@ -1,24 +1,36 @@
 let paused = false;
 let pauseBtn;
 //let colored=true;
-let nightMode=false;
+let darkAmount=0;
 
 const BASE_W = 1000;
 const BASE_H = 800;
 
 let cnv;
 
+function updateButtonStyle(){
+  if(paused){
+    pauseBtn.html("TO DAYTIME");
+    pauseBtn.style("background","#333");
+    pauseBtn.style("color","#fff");
+  }else{
+    pauseBtn.html("TO DAYTIME");
+    pauseBtn.style("background","#ddd");
+    pauseBtn.style("color","#000");
+  }
+}
 
 function setup() {
   cnv=createCanvas(windowWidth, windowHeight);
   cnv.elt.focus();
 
-  pauseBtn=createButton("recovery&continue");
+  pauseBtn=createButton("TO DAYTIME");
   pauseBtn.position(width*0.02,height*0.02);
   
-  pauseBtn.mousePressed(()=>{paused=false; for(const c of cars){
-    c.recolor();
-  }
+  pauseBtn.mousePressed(()=>{paused=false; 
+    darkMode=false;
+    for(const c of cars)c.recolor();
+    updateButtonStyle();
     cnv.elt.focus();
   });
 
@@ -81,21 +93,36 @@ function draw() {
 
 
   pop();
+
+  let target=paused?1:0;
+  darkAmount=lerp(darkAmount,target,0.08);
+
+  //let t=darkAmount;
+  //darkAmount=t*t*(3-2*t);
+
+  if(darkAmount>0.01){
+    noStroke();
+    fill(100,110,140,160*darkAmount);
+    rect(0,0,BASE_W,BASE_H);
+  }
   pop();
+
+  //if(darkMode){
+    //noStroke();
+   // fill(0,140);
+   // rect(0,0,width,height);
+  //}
+
 }
 
-//function mousePressed(){
-  //for(const c of cars) {
- // c.toGray();
-  //}
-//}
 
 function keyPressed(){
   if(key===' '){
     paused=true;
-    nightMode=true;
+    darkMode=true;
     
-    for(const c of cars){c.toGray()};
+    for(const c of cars)c.toGray();
+    updateButtonStyle();
     }
     }
     
