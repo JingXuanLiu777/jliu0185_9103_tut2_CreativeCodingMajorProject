@@ -60,9 +60,9 @@ this.color = option.color || randomCarColor();
 ## Intra-group distinctions
 My work primarily embodies the following distinctions:
 **Emphasis on physical objects undergoing "path-based motion"**
->I prioritise the transition of the vehicle's state, focusing chiefly on its dynamic presentation. While preserving other elements unchanged, altering the vehicle's attributes modifies the visual effects.
+-I prioritise the transition of the vehicle's state, focusing chiefly on its dynamic presentation. While preserving other elements unchanged, altering the vehicle's attributes modifies the visual effects.
 **Interactive control of narrative pacing**
->Interaction governs the vehicle's movement rather than automatic cycling.
+-Interaction governs the vehicle's movement rather than automatic cycling.
 The contrast between static and dynamic states simulates the difference between day and night.
 
 
