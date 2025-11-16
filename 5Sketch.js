@@ -35,7 +35,7 @@ function setup() {
     
     for(const c of cars)c.recolor();
     updateButtonStyle();
-    //Restore keyboard input let keyboard controls to continue
+    //Restore keyboard input let keyboard controls to continue（p5.js "focused"）
     cnv.elt.focus();
   });
 
@@ -92,7 +92,7 @@ function draw() {
   drawStations();
 
 
-  // 4) Stop Car Animation
+  // 4) Stop Car Animation(p5.js "pause()")
  if (paused === false) {
   advanceCars();
 }
@@ -103,6 +103,7 @@ function draw() {
 
   //Night mode fade in and fade out
   let target=paused?1:0;
+  //Smooth transition(p5.js "lerp()")
   darkAmount=lerp(darkAmount,target,0.08);
 
 
