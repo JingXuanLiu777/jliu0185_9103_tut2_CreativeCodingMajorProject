@@ -88,3 +88,4 @@ The contrast between static and dynamic states simulates the difference between 
 https://openprocessing.org/sketch/2404618
 https://p5js.org/reference/p5/p5.Vector/
 https://p5js.org/examples/games-ping-pong/
+https://p5js.org/reference/p5.MediaElement/pause/

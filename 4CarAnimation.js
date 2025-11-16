@@ -119,6 +119,8 @@ class Car {
     fill(this.color);
     circle(p.x, p.y, this.r*2);
   }
+
+  //turn to grey
    recolor() {
     this.color = randomCarColor();
   }
